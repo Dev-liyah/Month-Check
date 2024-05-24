@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="input">
+    <button onclick="submit()">Click</button>
+    <p id="para"></p>
+    <script>
+        let input1 = document.getElementById('input')
+        let result = document.getElementById('para')
+
+        function submit(params) {
+            switch (input1.value) {
+                case "January", "February", "March":
+                    let checkseason = `first quater`
+                    result.innerHTML = checkseason
+                case "April", "May", "June":
+                    let checkseason2 = `second quater`
+                    result.innerHTML = checkseason
+                case "July", "August", "September":
+                    let checkseason3 = `third quater`
+                    result.innerHTML = checkseason
+                case "october", "November", "December":
+                    let checkseason4 = `fourth quater`
+                    result.innerHTML = checkseason
+
+
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

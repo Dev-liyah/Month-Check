@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month</title>
+    <style>
+        body {
+            background-color: teal;
+        }
+
+        #big-div {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #circle {
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+        }
+
+        #circle-2 {
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            margin: 0 0 0 50px;
+        }
+
+        #circle-1 {
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            margin: 0 0 0 50px;
+        }
+
+        #circle-3 {
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+
+        }
+
+        #big-circle {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #container {
+            background-color: white;
+            height: 300px;
+            border-radius: 30px;
+            width: 300px;
+            margin-top: 70px;
+        }
+
+        #container input {
+            margin-top: 30px;
+        }
+
+        #container button {
+            background-color: teal;
+            border: none;
+            width: 80px;
+            height: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="big-circle">
+            <div>
+                <div id="circle">
+
+                </div>
+                <div id="circle-1">
+
+                </div>
+            </div>
+            <div>
+                <div id="circle-2">
+
+                </div>
+                <div id="circle-3">
+
+                </div>
+            </div>
+        </div>
+        <div id="big-div">
+            <div id="container">
+                <input type="text" id="input">
+                <button onclick="submit()">Click me</button>
+                <div id="output"></div>
+            </div>
+        </div>
+
+</body>
+
+</html>
+<script>
+    let input1 = document.getElementById('input')
+    let result = document.getElementById('output')
+    function submit() {
+        switch (input1.value) {
+            case "january":
+                let month1 = "january has 31days"
+                result.innerHTML = month1
+                break;
+            case "february":
+                let month2 = "Febuary has 28/29days"
+                result.innerHTML = month2
+                break;
+            case "march":
+                let month3 = "March has 31days"
+                result.innerHTML = month3
+                break;
+            case "april":
+                let month4 = "April has 30days"
+                result.innerHTML = month2
+                break;
+            case "may":
+                let month5 = "May has 31days"
+                result.innerHTML = month5
+                break;
+            case "june":
+                let month6 = "june has 30days"
+                result.innerHTML = month6
+                break;
+            case "july":
+                let month7 = "July has 31days"
+                result.innerHTML = month7
+                break;
+            case "august":
+                let month8 = "August has 31days"
+                result.innerHTML = month8
+                break;
+            case "september":
+                let month9 = "September has 30days"
+                result.innerHTML = month9
+                break;
+            case "october":
+                let month10 = "October has 31days"
+                result.innerHTML = month10
+                break;
+            case "november":
+                let month11 = "November has 30days"
+                result.innerHTML = month11
+                break;
+            case "december":
+                let month12 = "December has 31days"
+                result.innerHTML = month12
+                break;
+
+            default:
+                alert("MAKE SURE THE WORD IS CORRECT")
+                break;
+        }
+
+    }
+
+
+
+
+</script>
